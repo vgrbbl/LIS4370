@@ -1,0 +1,15 @@
+Package: goldTS
+Title: A Package to Create Time Series Visualizations based on GoldSilver Dataset
+Version: 0.0.0.9000
+Authors@R: person("Verity", "Gribble", "vgrbbl@yahoo.com", role = c("aut", "cre"),
+Description: The package goldTS is intended to create different time series visualizations 
+                    using the dataset GoldSilver from library AER 
+                    with use of ggplot2
+Depends:  R (>= 3.3)
+          forecast
+          ggplot2 
+Suggests: dplyr
+License:  CC0
+lazydata: true
+
+
