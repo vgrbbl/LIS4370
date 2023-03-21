@@ -6,7 +6,7 @@ Description: The package goldTS is intended to create different time series visu
                     using the dataset GoldSilver from library AER 
                     with use of ggplot2
 Depends:  R (>= 3.3)
-          forecast
+          AER
           ggplot2 
 Suggests: dplyr
 License:  CC0
