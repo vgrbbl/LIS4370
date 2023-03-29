@@ -1,0 +1,50 @@
+---
+title: "Module #12"
+output:
+  html_document: default
+  pdf_document: default
+date: "2023-03-29"
+---
+
+## R Markdown Files
+ 
+### The aim of this module is to create an R markdown document
+
+  **Link to my GitHub:**
+ [https://github.com/vgrbbl/LIS4370](https://github.com/vgrbbl/LIS4370)
+ 
+ Load ggplot2
+```{r}
+
+library(ggplot2)
+
+```
+
+### Step 1. 
+ Load any data set and save as __*df*__ ...
+```{r}
+
+df <- mtcars
+
+```
+
+### Step 2.
+Run __*head( )*__ on data saved as __*df*__
+```{r, echo = TRUE}
+
+head(df)
+
+```
+
+### Step 3.
+
+Create a scatterplot using ggplot
+```{r, fig.width = 5, fig.height = 5, message = FALSE}
+
+ggplot(df, aes(x=hp, y = disp), ) + 
+  geom_point() + 
+  stat_smooth(method = "lm")+
+  ggtitle("hp - disp scatterplot") 
+
+```
+
